@@ -20,6 +20,7 @@ body {
     background-color: #5F1DB2;
     color: #f9f9f9;
     position: fixed;
+    z-index: 10;
 }
 
 .logo {
@@ -50,3 +51,22 @@ body {
     width: 100%;
 }
 
+.triangle {
+    position: relative;
+    background: #5F1DB2;
+    height: 50vh;
+    z-index: 5;
+}
+
+.triangle::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 100px 0 100px;
+    border-color: #5F1DB2 transparent transparent transparent;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+}
