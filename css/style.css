@@ -70,3 +70,12 @@ body {
     left: 50%;
     transform: translateX(-50%) translateY(100%);
 }
+
+.hero {
+    background-image: url('images/hero.jpg');
+    background-color: blue;
+    background-blend-mode: multiply;
+    width: 600px;
+    height: auto;
+}
+
